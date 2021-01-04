@@ -140,5 +140,48 @@ body {
       flex-direction: column;
       justify-content: space-around;
     }
+    .product-card {
+      width: 40%;
+      height: 80%;
+      margin: auto;
+      margin-top: 2.5%;
+      background-color: whitesmoke;
+      box-shadow: 0 0 5px 0px grey;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .img-con {
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        .image {
+          margin: auto;
+          // margin-top: 10px;
+          height: 100%;
+          width: 40%;
+        }
+      }
+      .rating {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .name {
+        font-size: 25px;
+        font-weight: 600;
+      }
+      .description {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .btn {
+        height: 5%;
+        width: 100%;
+      }
+    }
   }
 }

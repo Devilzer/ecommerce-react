@@ -2,6 +2,7 @@ import './style/App.scss';
 import Button from '@material-ui/core/Button';
 import Products from "./components/Products";
 import AddProduct from "./components/AddProduct";
+import ProductCard from "./components/ProductCard";
 
 function App() {
   return (
@@ -22,7 +23,10 @@ function App() {
       </div>
 
       {/* <Products/> */}
-      <AddProduct/>
+      {/* <AddProduct/> */}
+      <ProductCard/>
+
+
     </div>
   );
 }
