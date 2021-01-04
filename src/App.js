@@ -12,12 +12,15 @@ function App() {
             Add Product
           </div>
           <div className="cart">
-            Cart
+          <i className="fab fa-opencart"></i><span>0</span>
           </div>
         </div>
       </div>
-      <div className="product-page"> 
 
+      <div className="product-page"> 
+        <div className="product">
+
+        </div>
       </div>
     </div>
   );

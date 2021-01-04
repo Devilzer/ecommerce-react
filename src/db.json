@@ -1,0 +1,60 @@
+{
+    "products": [
+      {
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51kGDXeFZKL._SL1024_.jpg",
+        "id": 1,
+        "title": "Apple iPhone 11 (64GB) - Black",
+        "price": 59900,
+        "description": "iPhone-11 Just the right ammount of everything. Better Camera, Better Design, Better everything",
+        "rating": 4
+      },
+      {
+        "img": "https://images-na.ssl-images-amazon.com/images/I/81a8akYBGRL._SL1500_.jpg",
+        "id": 2,
+        "title": "Targus KB55 AKB55TT Bluetooth Multi-Platform Keyboard (Black)",
+        "price": 1099,
+        "description": "Multi-platform: Windows, Mac, iOS, Android; Bluetooth 3.0 Wireless Connection. Super slim design. Scissor-switch keys provide a better typing response",
+        "rating": 3.5
+      },
+      {
+        "img": "https://images-na.ssl-images-amazon.com/images/I/619iTNHSCGL._SL1500_.jpg",
+        "id": 3,
+        "title": "OnePlus 8 (Glacial Green 6GB RAM+128GB Storage)",
+        "price": 41999,
+        "description": "Oneplus 8 - Lead with speed, 90hz fluid display, Qualcomm Snapdragon 865 with 5G, Slim and sleek design",
+        "rating": 5
+      },
+      {
+        "img": "https://images-na.ssl-images-amazon.com/images/I/71Wk5mfMbML._SL1500_.jpg",
+        "id": 4,
+        "title": "Apple iPad (10.2-inch, Wi-Fi + Cellular, 32GB) - Space Grey (Latest Model)",
+        "price": 40999,
+        "description": "10.2-inch (25.91 cms) Retina display. A10 Fusion chip. Touch ID fingerprint sensor and Apple Pay. 8MP back camera, 1.2MP FaceTime HD front camera. Stereo speakers. 802.11ac Wi-Fi and Gigabit-class LTE cellular data. Up to 10 hours of battery life",
+        "rating": 4
+      },
+      {
+        "img": "https://images-na.ssl-images-amazon.com/images/I/81pezrPSgOL._SL1500_.jpg",
+        "id": 5,
+        "title": "HP Pavilion Gaming 9th Gen Intel Core i5 Processor",
+        "price": 64990,
+        "description": "HP Pavilion Gaming 9th Gen Intel Core i5 Processor 15.6-inch FHD Gaming Laptop (8GB/1TB HDD/M.2 Slot/Windows 10/NVIDIA GTX 1650 4GB/Shadow Black), 15-dk0264TX",
+        "rating": 4
+      },
+      {
+        "img": "https://images-na.ssl-images-amazon.com/images/I/81rIDEbo31L._SL1500_.jpg",
+        "id": 6,
+        "title": "New Apple MacBook Pro (13-inch)",
+        "price": 179999,
+        "description": "New Apple MacBook Pro (13-inch, 16GB RAM, 512GB SSD, 2.0GHz Quad-core 10th-Generation Intel Core i5 Processor, Magic Keyboard) - Space Grey",
+        "rating": 5
+      },
+      {
+        "img": "https://images-na.ssl-images-amazon.com/images/I/81rIDEbo31L._SL1500_.jpg",
+        "id": 7,
+        "title": "New Apple MacBook Pro (13-inch)",
+        "price": 199999,
+        "description": "New Apple MacBook Pro (13-inch, 16GB RAM, 1TB SSD, 2.0GHz Quad-core 10th-Generation Intel Core i5 Processor, Magic Keyboard) - Space Grey",
+        "rating": 5
+      }
+    ]
+  }
