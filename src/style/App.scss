@@ -1,4 +1,5 @@
 body {
+  background-color: #f0f6f6;
   .App {
     position: absolute;
     height: 100%;
@@ -37,7 +38,7 @@ body {
             position: absolute;
             font-size: 20px;
             top: -2.5%;
-            right: 5.85%;
+            right: 5%;
           }
         }
         .add-product:hover {
@@ -53,6 +54,36 @@ body {
     .product-page {
       width: 100%;
       height: 90%;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      .product {
+        margin: auto;
+        margin-top: 25px;
+        width: 95%;
+        height: 225px;
+        // border-radius: 25px;
+        // border: 2.5px solid grey;
+        background-color: whitesmoke;
+        box-shadow: 0 0 5px 0px grey;
+        display: flex;
+        flex-direction: column;
+        .info {
+          height: 90%;
+          display: flex;
+          flex-direction: row;
+          .image {
+            margin: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+            height: 90%;
+            width: 150px;
+          }
+        }
+      }
+    }
+    .product-page::-webkit-scrollbar {
+      display: none;
     }
   }
 }
