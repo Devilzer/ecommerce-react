@@ -41,10 +41,14 @@ body {
             right: 5%;
           }
         }
-        .add-product:hover {
-          font-weight: 600;
-          cursor: pointer;
+        Button {
+          color: whitesmoke;
+          font-size: 20px;
         }
+        // .add-product:hover {
+        //   font-weight: 600;
+        //   cursor: pointer;
+        // }
         .cart:hover {
           font-weight: 600;
           cursor: pointer;
@@ -52,6 +56,7 @@ body {
       }
     }
     .product-page {
+      color: #131921;
       width: 100%;
       height: 90%;
       display: flex;
@@ -60,7 +65,7 @@ body {
       .product {
         margin: auto;
         margin-top: 25px;
-        width: 95%;
+        width: 90%;
         height: 225px;
         // border-radius: 25px;
         // border: 2.5px solid grey;
@@ -69,7 +74,7 @@ body {
         display: flex;
         flex-direction: column;
         .info {
-          height: 90%;
+          height: 85%;
           display: flex;
           flex-direction: row;
           .image {
@@ -79,11 +84,61 @@ body {
             height: 90%;
             width: 150px;
           }
+          .sub-info {
+            height: 90%;
+            margin: auto;
+            margin-left: 25px;
+            .name {
+              font-size: 25px;
+              margin-bottom: 7.5px;
+            }
+            .price {
+              font-size: 20px;
+              color: grey;
+              span {
+                font-weight: 600;
+              }
+            }
+          }
+          .description {
+            height: 90%;
+            width: 50%;
+            margin: auto;
+            overflow-y: scroll;
+            span {
+              font-weight: 600;
+            }
+          }
+          .description::-webkit-scrollbar {
+            display: none;
+          }
+        }
+        .btns {
+          height: 15%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          Button {
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+          }
         }
       }
     }
     .product-page::-webkit-scrollbar {
       display: none;
+    }
+    .add-product {
+      width: 45%;
+      height: 75%;
+      margin: auto;
+      margin-top: 3.75%;
+      // background-color: whitesmoke;
+      // box-shadow: 0 0 5px 0px grey;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
     }
   }
 }
