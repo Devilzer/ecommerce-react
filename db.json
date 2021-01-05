@@ -1,59 +1,51 @@
 {
     "products": [
       {
-        "img": "https://images-na.ssl-images-amazon.com/images/I/51kGDXeFZKL._SL1024_.jpg",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNxz7ME3co2srxMGV96yNiEzwYRzqSyJfKjg&usqp=CAU",
         "id": 1,
-        "title": "Apple iPhone 11 (64GB) - Black",
-        "price": 59900,
-        "description": "iPhone-11 Just the right ammount of everything. Better Camera, Better Design, Better everything",
+        "title": "Apple iPhone 12 (64GB) - Red",
+        "price": 73990,
+        "description": " Blast past fast. A14 Bionic, the fastest chip in a smartphone. An edge-to-edge OLED display. Ceramic Shield with four times better drop performance.",
         "rating": 4
       },
       {
-        "img": "https://images-na.ssl-images-amazon.com/images/I/81a8akYBGRL._SL1500_.jpg",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0BWcm-pGRzQS5WHjWjCaYMlUPSHLsvdlzA&usqp=CAU",
         "id": 2,
-        "title": "Targus KB55 AKB55TT Bluetooth Multi-Platform Keyboard (Black)",
-        "price": 1099,
-        "description": "Multi-platform: Windows, Mac, iOS, Android; Bluetooth 3.0 Wireless Connection. Super slim design. Scissor-switch keys provide a better typing response",
-        "rating": 3.5
+        "title": "MacBook Air (M1, 2020) - Space Grey",
+        "price": 92990,
+        "description": "MacBook Air with Apple M1 chip. Apple's thinnest and lightest notebook gets supercharged with the Apple M1 chip. Go longer than ever with up to 18 hours of battery life ",
+        "rating": 4.5
       },
       {
-        "img": "https://images-na.ssl-images-amazon.com/images/I/619iTNHSCGL._SL1500_.jpg",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyXm_1eIhGoRMUa9YnxRRp53c00cN3OkbK2A&usqp=CAU",
         "id": 3,
-        "title": "OnePlus 8 (Glacial Green 6GB RAM+128GB Storage)",
-        "price": 41999,
-        "description": "Oneplus 8 - Lead with speed, 90hz fluid display, Qualcomm Snapdragon 865 with 5G, Slim and sleek design",
+        "title": "Samsung Galaxy Note20 Ultra 5G",
+        "price": 104999,
+        "description": "The Samsung Galaxy Note 20 Ultra 5G is extremely expensive but offers the best of Samsung's technology including a 108-megapixel camera, massive Dynamic AMOLED display, One UI 2.5 designed for everyday simplicity .",
         "rating": 5
       },
       {
-        "img": "https://images-na.ssl-images-amazon.com/images/I/71Wk5mfMbML._SL1500_.jpg",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJfHTjCSTk1n3uBVwvdE00BqEdfpQtN7_mnQ&usqp=CAU",
         "id": 4,
-        "title": "Apple iPad (10.2-inch, Wi-Fi + Cellular, 32GB) - Space Grey (Latest Model)",
+        "title": "Apple iPad Air - Space Grey (Latest Model)",
         "price": 40999,
-        "description": "10.2-inch (25.91 cms) Retina display. A10 Fusion chip. Touch ID fingerprint sensor and Apple Pay. 8MP back camera, 1.2MP FaceTime HD front camera. Stereo speakers. 802.11ac Wi-Fi and Gigabit-class LTE cellular data. Up to 10 hours of battery life",
+        "description": "This is the same feeling you will experience if once you get your hands on this Apple iPad Air that features a 10.5 inch (26.67 cm) retina screen.iPad Air is the perfect way to stay connected with Wi‑Fi and 4G LTE.And Up to 10 hours of battery life",
         "rating": 4
       },
       {
-        "img": "https://images-na.ssl-images-amazon.com/images/I/81pezrPSgOL._SL1500_.jpg",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/A1A2yQlAXCL._SL1500_.jpg",
         "id": 5,
-        "title": "HP Pavilion Gaming 9th Gen Intel Core i5 Processor",
-        "price": 64990,
-        "description": "HP Pavilion Gaming 9th Gen Intel Core i5 Processor 15.6-inch FHD Gaming Laptop (8GB/1TB HDD/M.2 Slot/Windows 10/NVIDIA GTX 1650 4GB/Shadow Black), 15-dk0264TX",
+        "title": "ASUS TUF Gaming A15 Laptop",
+        "price": 96990,
+        "description": "Geared for serious gaming and real-world durability, the TUF Gaming A15 is a fully-loaded Windows 10 gaming laptop that can carry you to victory. Powered by the latest AMD Ryzen 9 CPU and GeForce GTX 1660 Ti GPU, action-packed gameplay is fast, fluid, and fully saturates speedy IPS-level displays up to 144Hz. Even while boasting a smaller and more portable chassis than its predecessors.",
         "rating": 4
       },
       {
-        "img": "https://images-na.ssl-images-amazon.com/images/I/81rIDEbo31L._SL1500_.jpg",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/71rhrO49SmL._SL1500_.jpg",
         "id": 6,
-        "title": "New Apple MacBook Pro (13-inch)",
-        "price": 179999,
-        "description": "New Apple MacBook Pro (13-inch, 16GB RAM, 512GB SSD, 2.0GHz Quad-core 10th-Generation Intel Core i5 Processor, Magic Keyboard) - Space Grey",
-        "rating": 5
-      },
-      {
-        "img": "https://images-na.ssl-images-amazon.com/images/I/81rIDEbo31L._SL1500_.jpg",
-        "id": 7,
-        "title": "New Apple MacBook Pro (13-inch)",
-        "price": 199999,
-        "description": "New Apple MacBook Pro (13-inch, 16GB RAM, 1TB SSD, 2.0GHz Quad-core 10th-Generation Intel Core i5 Processor, Magic Keyboard) - Space Grey",
+        "title": "Apple Watch SE (GPS, 44mm) - Space Grey",
+        "price": 32990,
+        "description": "Track your daily activity on Apple Watch and see your trends in the Fitness app on iPhone. Measure workouts like running, walking, cycling, yoga, swimming, and dance. High and low heart rate notifications and irregular heart rhythm notification",
         "rating": 5
       }
     ]
