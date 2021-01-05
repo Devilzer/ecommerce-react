@@ -126,9 +126,97 @@ body {
         }
       }
     }
+
     .product-page::-webkit-scrollbar {
       display: none;
     }
+    .cart-container {
+      color: #131921;
+      margin: auto;
+      margin-top: 0px;
+      width: 75%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      // background-color: aquamarine;
+      .cart-items {
+        overflow-y: scroll;
+        height: 92.5%;
+        // background-color: #131921;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px solid #131921;
+        .item {
+          margin-top: 20px;
+          background-color: whitesmoke;
+          width: 100%;
+          height: 150px;
+          display: flex;
+          flex-direction: row;
+          border-bottom: 2.5px solid grey;
+          img {
+            margin-left: 25px;
+            height: 95%;
+            width: 125px;
+          }
+          .sub-info {
+            height: 90%;
+            margin: auto;
+            margin-left: 25px;
+            .name {
+              font-size: 25px;
+              margin-bottom: 7.5px;
+            }
+            .price {
+              font-size: 20px;
+              color: grey;
+              span {
+                font-weight: 600;
+              }
+            }
+          }
+          .qyt-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-right: 20px;
+            .qty {
+              text-align: center;
+              margin-bottom: 5px;
+              font-weight: 600;
+              font-size: 20px;
+            }
+            .btn {
+              margin-bottom: 15px;
+              .cnt {
+                font-weight: 700;
+                font-size: 18px;
+                margin: 0px 10px;
+              }
+            }
+          }
+          .delete-cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-right: 25px;
+            Button {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+      .total {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-size: 25px;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
     .add-product {
       width: 45%;
       height: 75%;
