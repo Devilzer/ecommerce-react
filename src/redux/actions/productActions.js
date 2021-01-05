@@ -4,7 +4,10 @@ export const fetchProducts = ()=>async(dispatch)=>{
     try {
         const {data} = await axios.get("https://my-json-server.typicode.com/Devilzer/ecommerce-react/products");
         console.log(data);
-        dispatch({type : "SET_PRODUCTS"});
+        dispatch({
+            type : "SET_PRODUCTS",
+            payload : data
+        });
     } catch (error) {
         console.log(error);
     }
