@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import { editProduct,deleteProduct } from "../redux/actions/productActions";
 import { useDispatch ,useSelector } from "react-redux";
 import { setCardPage , setPage } from "../redux/actions/uiActions";
+import { addProduct } from "../redux/actions/cartAction";
 
 function Product({product}) {
   const dispatch = useDispatch();
@@ -30,6 +31,10 @@ function Product({product}) {
     dispatch(setCardPage(card));
     dispatch(setPage("productcard"));
   };
+  const addToCart = () =>{
+    var cartProduct = value.id;
+    dispatch(addProduct(cartProduct));
+  }
   var productElement;
   if(edit){
     productElement = <div className="product">
@@ -65,8 +70,8 @@ function Product({product}) {
   </div>;
   }
   else{
-    productElement =<div className="product" onClick={handleCardClick}>
-    <div className="info">
+    productElement =<div className="product" >
+    <div className="info" onClick={handleCardClick}>
       <img src={product.img} className="image" alt="product">
       </img>
       <div className="sub-info">
@@ -87,7 +92,7 @@ function Product({product}) {
 
     </div>
     <div className="btns">
-      <Button variant="contained" color="primary">
+      <Button variant="contained" color="primary" onClick={addToCart}>
         <i className="fas fa-cart-plus"></i>
       </Button>
       <Button variant="contained" onClick={()=>setEdit(true)}>

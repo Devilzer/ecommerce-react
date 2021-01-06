@@ -7,8 +7,7 @@ const reducer = (state =initialState, action)=>{
         case "SET_PRODUCTS":
             return {
                 ...state,
-                products : action.payload,
-                filtered : action.payload
+                products : action.payload
 
             };
         case "ADD_PRODUCT":
