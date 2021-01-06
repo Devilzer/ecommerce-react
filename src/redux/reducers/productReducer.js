@@ -1,5 +1,5 @@
 const initialState = {
-    products : []
+    products : [],
 };
 
 const reducer = (state =initialState, action)=>{
@@ -7,7 +7,9 @@ const reducer = (state =initialState, action)=>{
         case "SET_PRODUCTS":
             return {
                 ...state,
-                products : action.payload
+                products : action.payload,
+                filtered : action.payload
+
             };
         case "ADD_PRODUCT":
             var newArray = state.products;
@@ -16,7 +18,6 @@ const reducer = (state =initialState, action)=>{
                 ...state,
                 products : newArray
             };
-    
         default:
             return state;
     }

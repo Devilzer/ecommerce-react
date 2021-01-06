@@ -1,15 +1,38 @@
 import React from 'react';
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import Product from "./Product";
+
 
 function Products() {
     const state = useSelector(state => state);
+    const initialArray = state.product.products;
+    var products;
+    function compare(a, b) {
+      const priceA = a.price;
+      const priceB = b.price;
+      let comparison = 0;
+      if (priceA > priceB) {
+        comparison = 1;
+      } else if (priceA < priceB) {
+        comparison = -1;
+      }
+      return comparison;
+      };
+      if(state.ui.filter==="true"){
+        products = [...initialArray];
+        products.sort(compare);
+        // console.log(products);
+      }
+      else{
+        products = state.product.products;
+        // console.log(products);
+      }
+
     return (
-      
       <div className="product-page">
         
           {
-            state.product.products.map((product,index)=>(
+              products.map((product,index)=>(
               <Product
                 key = {index}
                 product = {product}

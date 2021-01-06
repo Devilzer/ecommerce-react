@@ -7,18 +7,29 @@ import AddProduct from "./components/AddProduct";
 import ProductCard from "./components/ProductCard";
 import Cart from "./components/Cart";
 import { setPage } from "./redux/actions/uiActions";
+import { setFilter } from "./redux/actions/uiActions";
 import { fetchProducts } from "./redux/actions/productActions";
 
 function App() {
   const dispatch = useDispatch();
   const state = useSelector(state => state);
-
   useEffect(()=>dispatch(fetchProducts()),[]);
-  var ele = <div className="sort-con">
-      <div>
-        <span>Sort By Price</span>&nbsp;<i className="fas fa-times-circle"></i>
-      </div>
-  </div>;
+
+  var ele ;
+  if(state.ui.filter==="true"){
+    ele = <div className="sort-con">
+        <div onClick={()=>dispatch(setFilter("false"))}>
+        &nbsp;<span>Sort By Price</span>&nbsp;<i className="fas fa-times-circle"></i>
+        </div>
+      </div>;
+  }
+  else{
+    ele = <div className="sort-con">
+        <div onClick={()=>dispatch(setFilter("true"))}>
+        &nbsp;<span>Sort By Price</span>&nbsp;
+        </div>
+      </div>;
+  }
 
   return (
     <div className="App">

@@ -1,6 +1,7 @@
 const initialState = {
     page : "home",
-    product:{}
+    product:{},
+    filter : "false"
 }
 
 const reducer = (state = initialState , action)=>{
@@ -10,8 +11,14 @@ const reducer = (state = initialState , action)=>{
                 ...state,
                 page : action.payload
             };
+        case "SET_FILTER":
+            return{
+                ...state,
+                filter : action.payload
+            }
         default:
             return state;
     }
 };
+
 export default reducer;
