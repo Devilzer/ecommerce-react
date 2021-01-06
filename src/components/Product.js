@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import { editProduct,deleteProduct } from "../redux/actions/productActions";
 import { useDispatch ,useSelector } from "react-redux";
 import { setCardPage , setPage } from "../redux/actions/uiActions";
-import { addProductCart } from "../redux/actions/cartAction";
+import { addProductCart, deleteCartProduct } from "../redux/actions/cartAction";
 
 function Product({product}) {
   const dispatch = useDispatch();
@@ -24,6 +24,7 @@ function Product({product}) {
   };
   const deleteHandler = ()=>{
     dispatch(deleteProduct(value.id));
+    dispatch(deleteCartProduct(value.id));
   };
   const handleCardClick = ()=>{
     var tempArr = state.product.products;
