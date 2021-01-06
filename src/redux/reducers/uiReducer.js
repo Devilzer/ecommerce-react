@@ -16,6 +16,11 @@ const reducer = (state = initialState , action)=>{
                 ...state,
                 filter : action.payload
             }
+        case "SET_CARD_PAGE":
+            return{
+                ...state,
+                product : action.payload
+            };
         default:
             return state;
     }

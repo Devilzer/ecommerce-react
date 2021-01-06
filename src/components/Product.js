@@ -2,10 +2,12 @@ import React,{useState} from 'react';
 import Rating from '@material-ui/lab/Rating';
 import Button from '@material-ui/core/Button';
 import { editProduct,deleteProduct } from "../redux/actions/productActions";
-import { useDispatch } from "react-redux";
+import { useDispatch ,useSelector } from "react-redux";
+import { setCardPage , setPage } from "../redux/actions/uiActions";
 
 function Product({product}) {
   const dispatch = useDispatch();
+  const state = useSelector(state => state);
   const [edit,setEdit]=useState(false);
   const [value,setValue]=useState({
     id : product.id,
@@ -21,6 +23,12 @@ function Product({product}) {
   };
   const deleteHandler = ()=>{
     dispatch(deleteProduct(value.id));
+  };
+  const handleCardClick = ()=>{
+    var tempArr = state.product.products;
+    var card = tempArr.find(obj=>obj.id===value.id);
+    dispatch(setCardPage(card));
+    dispatch(setPage("productcard"));
   };
   var productElement;
   if(edit){
@@ -57,7 +65,7 @@ function Product({product}) {
   </div>;
   }
   else{
-    productElement =<div className="product">
+    productElement =<div className="product" onClick={handleCardClick}>
     <div className="info">
       <img src={product.img} className="image" alt="product">
       </img>

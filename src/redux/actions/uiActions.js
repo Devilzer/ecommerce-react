@@ -11,3 +11,10 @@ export const setFilter = (value)=>{
         payload : value
     };
 };
+
+export const setCardPage = (card)=>{
+    return{
+        type : "SET_CARD_PAGE",
+        payload : card
+    };
+};
