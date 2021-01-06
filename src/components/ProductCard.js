@@ -2,7 +2,7 @@ import React from 'react';
 import Rating from '@material-ui/lab/Rating';
 import Button from '@material-ui/core/Button';
 import { useSelector, useDispatch } from "react-redux";
-import { addProduct } from "../redux/actions/cartAction";
+import { addProductCart } from "../redux/actions/cartAction";
 
 
 
@@ -12,7 +12,7 @@ function ProductCard() {
 
   const addToCart = () =>{
     var cartProduct = product.id;
-    dispatch(addProduct(cartProduct));
+    dispatch(addProductCart(cartProduct));
   };
 
     return (
