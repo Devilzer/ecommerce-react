@@ -16,7 +16,7 @@ function AddProduct() {
    useEffect(() => {
     var newId = new Date().getTime();
     setValue({...value,id:newId});
-   }, []);
+   }, [value]);
    const dispatch = useDispatch();
     const handleClick = ()=>{
         var newId = new Date().getTime();

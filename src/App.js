@@ -13,7 +13,7 @@ import { fetchProducts } from "./redux/actions/productActions";
 function App() {
   const dispatch = useDispatch();
   const state = useSelector(state => state);
-  useEffect(()=>dispatch(fetchProducts()),[]);
+  useEffect(()=>dispatch(fetchProducts()),[dispatch]);
 
   var ele ;
   if(state.ui.filter==="true"){

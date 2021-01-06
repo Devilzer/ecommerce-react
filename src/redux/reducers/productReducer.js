@@ -18,6 +18,22 @@ const reducer = (state =initialState, action)=>{
                 ...state,
                 products : newArray
             };
+        case "EDIT_PRODUCT":
+            var tempArr = state.products;
+            var index = tempArr.findIndex((product,index)=>{
+                if(product.id===action.payload.id){
+                  return true;
+                }
+              });
+              tempArr[index].title = action.payload.title;
+              tempArr[index].rating = action.payload.rating;
+              tempArr[index].description = action.payload.description;
+              tempArr[index].price = action.payload.price;
+              return{
+                  ...state,
+                  products : tempArr
+              };
+
         default:
             return state;
     }

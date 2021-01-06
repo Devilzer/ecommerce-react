@@ -56,6 +56,7 @@ body {
       }
     }
     .sort-con {
+      height: 7.5;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -77,7 +78,7 @@ body {
     .product-page {
       color: #131921;
       width: 100%;
-      height: 90%;
+      height: 82.5%;
       display: flex;
       flex-direction: column;
       overflow-y: scroll;
@@ -105,6 +106,7 @@ body {
           }
           .sub-info {
             height: 90%;
+            width: 30%;
             margin: auto;
             margin-left: 25px;
             .name {
@@ -126,6 +128,13 @@ body {
             overflow-y: scroll;
             span {
               font-weight: 600;
+            }
+            textarea {
+              outline: none;
+              font-size: 18px;
+              resize: none;
+              height: 70%;
+              width: 80%;
             }
           }
           .description::-webkit-scrollbar {

@@ -19,3 +19,9 @@ export const addProduct = (value) =>{
         payload : value
     };
 };
+export const editProduct = (value)=>{
+    return{
+        type : "EDIT_PRODUCT",
+        payload : value
+    };
+};
