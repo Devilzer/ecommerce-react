@@ -14,6 +14,11 @@ function App() {
   const state = useSelector(state => state);
 
   useEffect(()=>dispatch(fetchProducts()),[]);
+  var ele = <div className="sort-con">
+      <div>
+        <span>Sort By Price</span>&nbsp;<i className="fas fa-times-circle"></i>
+      </div>
+  </div>;
 
   return (
     <div className="App">
@@ -32,6 +37,7 @@ function App() {
         </div>
       </div>
       {/* <Products/> */}
+      {state.ui.page==="home"&&ele}
       {state.ui.page==="home"&&<Products/>}
       {state.ui.page==="addproduct"&&<AddProduct/>}
       {state.ui.page==="cart"&&<Cart/>}

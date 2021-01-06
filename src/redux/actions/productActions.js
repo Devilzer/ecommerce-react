@@ -12,3 +12,9 @@ export const fetchProducts = ()=>async(dispatch)=>{
         console.log(error);
     }
 };
+export const addProduct = (value) =>{
+    return{
+        type : "ADD_PRODUCT",
+        payload : value
+    };
+};

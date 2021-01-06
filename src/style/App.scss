@@ -55,6 +55,25 @@ body {
         }
       }
     }
+    .sort-con {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      div {
+        margin-right: 25px;
+        margin-top: 10px;
+        background-color: #131921;
+        color: #f0f6f6;
+        padding: 5px;
+        border-radius: 25px;
+        span {
+          font-weight: 600;
+        }
+      }
+      div:hover {
+        cursor: pointer;
+      }
+    }
     .product-page {
       color: #131921;
       width: 100%;

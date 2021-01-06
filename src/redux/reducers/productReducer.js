@@ -9,6 +9,13 @@ const reducer = (state =initialState, action)=>{
                 ...state,
                 products : action.payload
             };
+        case "ADD_PRODUCT":
+            var newArray = state.products;
+            newArray.push(action.payload);
+            return{
+                ...state,
+                products : newArray
+            };
     
         default:
             return state;

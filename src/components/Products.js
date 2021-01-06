@@ -5,16 +5,18 @@ import Product from "./Product";
 function Products() {
     const state = useSelector(state => state);
     return (
-      <div className="product-page"> 
-        {
-          state.product.products.map((product,index)=>(
-            <Product
-              key = {index}
-              product = {product}
-            />
-          ))
-        }
-        {/* <Product/> */}
+      
+      <div className="product-page">
+        
+          {
+            state.product.products.map((product,index)=>(
+              <Product
+                key = {index}
+                product = {product}
+              />
+            ))
+          }
+        
       </div>
     )
 }
