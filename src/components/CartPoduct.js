@@ -1,20 +1,23 @@
 import React from 'react';
 import Rating from '@material-ui/lab/Rating';
 import Button from '@material-ui/core/Button';
+import { useSelector } from "react-redux";
 
-function CartPoduct() {
+function CartPoduct({product}) {
+    const products = useSelector(state => state.product.products);
+    const cartItem = products.find(obj=>obj.id===product.id);
     return (
         <div className="cart-items">
             <div className="item">
-              <img src="https://media.wired.com/photos/5bcea2642eea7906bba84c67/master/w_2560%2Cc_limit/iphonexr.jpg"></img>
+              <img src={cartItem.img}></img>
 
               <div className="sub-info">
                 <div className="name">
-                  iphone 12
+                  {cartItem.title}
                 </div>
-                <Rating name="read-only" value={3} readOnly />
+                <Rating name="read-only" value={cartItem.rating} readOnly />
                 <div className="price">
-                  <span>Rs</span> 49999
+                  <span>Rs</span> {cartItem.price}
                 </div>
               </div>
               <div className="qyt-container">
@@ -25,7 +28,7 @@ function CartPoduct() {
                   <Button variant="contained" color="primary">
                     <i className="fas fa-minus-circle"></i>
                   </Button>
-                  <span className="cnt">0</span>
+                  <span className="cnt">{product.quantity}</span>
                   <Button variant="contained" color="primary">
                     <i className="fas fa-plus-circle"></i>
                   </Button>

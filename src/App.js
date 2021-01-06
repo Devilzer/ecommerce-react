@@ -39,11 +39,9 @@ function App() {
         </div>
         <div className ="head-buttons">
           <Button onClick={()=>dispatch(setPage("addproduct"))}>Add Product&nbsp;<i className="fas fa-plus-circle"></i></Button>
-          {/* <div className= "add-product">
-            Add Product <i className="fas fa-plus-circle"></i>
-          </div> */}
+          
           <div className="cart" onClick={()=>dispatch(setPage("cart"))}>
-          <i className="fab fa-opencart"></i><span>0</span>
+            <span>{state.cart.cart.length}</span><i className="fab fa-opencart"></i>
           </div>
         </div>
       </div>

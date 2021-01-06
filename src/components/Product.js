@@ -34,7 +34,7 @@ function Product({product}) {
   const addToCart = () =>{
     var cartProduct = value.id;
     dispatch(addProduct(cartProduct));
-  }
+  };
   var productElement;
   if(edit){
     productElement = <div className="product">

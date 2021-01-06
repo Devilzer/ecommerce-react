@@ -1,11 +1,19 @@
 import React from 'react';
 import Rating from '@material-ui/lab/Rating';
 import Button from '@material-ui/core/Button';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { addProduct } from "../redux/actions/cartAction";
+
 
 
 function ProductCard() {
   const product = useSelector(state => state.ui.product);
+  const dispatch = useDispatch();
+
+  const addToCart = () =>{
+    var cartProduct = product.id;
+    dispatch(addProduct(cartProduct));
+  };
 
     return (
         <div className="product-card">
@@ -24,7 +32,7 @@ function ProductCard() {
             {product.description}
           </div>
           <div className="btn">
-             <Button size="large" variant="contained" color="primary">
+             <Button size="large" variant="contained" color="primary" onClick={addToCart}>
                 <i className="fas fa-cart-plus"></i>
               </Button>
           </div>
