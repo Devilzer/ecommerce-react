@@ -1,4 +1,5 @@
 import axios from "axios";
+import { showNotification } from "../../config/noty";
 
 export const fetchProducts = ()=>async(dispatch)=>{
     try {
@@ -14,18 +15,21 @@ export const fetchProducts = ()=>async(dispatch)=>{
     }
 };
 export const addProduct = (value) =>{
+    showNotification("Product Added.");
     return{
         type : "ADD_PRODUCT",
         payload : value
     };
 };
 export const editProduct = (value)=>{
+    showNotification("Product Updated.");
     return{
         type : "EDIT_PRODUCT",
         payload : value
     };
 };
 export const deleteProduct = (id)=>{
+    showNotification("Product Deleted.");
     return{
         type : "DELETE_PRODUCT",
         payload : id

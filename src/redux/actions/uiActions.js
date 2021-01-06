@@ -1,3 +1,6 @@
+import { showNotification } from "../../config/noty";
+
+
 export const setPage = (page)=>{
     return{
         type : "SET_PAGE",
@@ -6,6 +9,9 @@ export const setPage = (page)=>{
 };
 
 export const setFilter = (value)=>{
+
+    showNotification("Sorted by Price.");
+
     return{
         type : "SET_FILTER",
         payload : value

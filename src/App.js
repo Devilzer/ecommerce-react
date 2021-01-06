@@ -9,6 +9,8 @@ import Cart from "./components/Cart";
 import { setPage } from "./redux/actions/uiActions";
 import { setFilter } from "./redux/actions/uiActions";
 import { fetchProducts } from "./redux/actions/productActions";
+import "../node_modules/noty/lib/noty.css";
+import "../node_modules/noty/lib/themes/nest.css";
 
 function App() {
   const dispatch = useDispatch();
