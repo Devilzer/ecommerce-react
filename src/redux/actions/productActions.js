@@ -25,3 +25,9 @@ export const editProduct = (value)=>{
         payload : value
     };
 };
+export const deleteProduct = (id)=>{
+    return{
+        type : "DELETE_PRODUCT",
+        payload : id
+    };
+};

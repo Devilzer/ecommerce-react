@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import Rating from '@material-ui/lab/Rating';
 import Button from '@material-ui/core/Button';
-import { editProduct } from "../redux/actions/productActions";
+import { editProduct,deleteProduct } from "../redux/actions/productActions";
 import { useDispatch } from "react-redux";
 
 function Product({product}) {
@@ -18,6 +18,9 @@ function Product({product}) {
     console.log(value);
     dispatch(editProduct(value));
     setEdit(false);
+  };
+  const deleteHandler = ()=>{
+    dispatch(deleteProduct(value.id));
   };
   var productElement;
   if(edit){
@@ -82,7 +85,7 @@ function Product({product}) {
       <Button variant="contained" onClick={()=>setEdit(true)}>
         <i className="fas fa-pencil-alt"></i>
       </Button>
-      <Button variant="contained" color="secondary">
+      <Button variant="contained" color="secondary" onClick={deleteHandler}>
         <i className="far fa-trash-alt"></i>
       </Button>
     </div>

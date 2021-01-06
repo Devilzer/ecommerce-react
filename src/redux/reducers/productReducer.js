@@ -33,6 +33,18 @@ const reducer = (state =initialState, action)=>{
                   ...state,
                   products : tempArr
               };
+        case "DELETE_PRODUCT":
+            var Arr = state.products;
+            var idx = Arr.findIndex((product,index)=>{
+                if(product.id===action.payload){
+                  return true;
+                }
+              });
+            Arr.splice(idx,1);
+            return{
+                ...state,
+                products : Arr
+            };
 
         default:
             return state;
