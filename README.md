@@ -20,6 +20,9 @@
 Home page with list of products.
 <img src="images/homePage.png"/><br/>
 
+#### Product Details page.
+<img src="images/details.png"/><br/>
+
 #### Add product page.
 <img src="images/addProduct.png"/><br/>
 
